@@ -29,6 +29,7 @@ class InfoCompteFormType extends AbstractType
                 'second_options' => ['label' => "Confirmation de l'email"],
             ])
             ->add('plainPassword', RepeatedType::class, [
+                'mapped' => false,
                 'type' => PasswordType::class,
                 'first_options' => ['label' => 'Mot de passe'],
                 'second_options' => ['label' => 'Confirmation du mot de passe'],
