@@ -1,0 +1,18 @@
+body {
+  min-height: 100vh;
+  /* animation-name: bgChange;
+      animation-duration: 15s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+      min-height: 100vh; */
+  background: url("/../images/piscine_2.jpg") no-repeat center/cover;
+}
+div.container {
+  background-color: white;
+  border: solid 3px #97c229;
+  margin: 50px;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 30px;
+}

@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block title %}Log in!
+{% endblock %}
+{% block body %}
+	<link rel="stylesheet" href="login_style.css">
+	<div class="container">
+		<div class="card">
+			<div class="car-header">
+				<h1>Se connecter</h1>
+			</div>
+			<div class="card-body">
+				<form method="post">
+					{% if error %}
+						<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+					{% endif %}
+					{% if app.user %}
+						<div class="mb-3 text-center">
+							<h6>Vous êtes connecté en tant que :
+								{% if is_granted('ROLE_ADMIN') %}
+									<h1>Administrateur</h1>
+								{% else %}
+									<h1>Utilisateur</h1>
+								{% endif %}
+								<a href="{{ path('app_logout') }}">Se déconnecter</a>
+							</div>
+						{% endif %}
+						<label for="inputEmail">email</label>
+						<input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+						<label for="inputPassword">mot de passe</label>
+						<input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+						<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+						<br>
+						<button class="btn btn-lg btn-success mt-3" type="submit">Se connecter</button>
+					</form>
+					<br>
+					<a class="btn btn-success" href="{{ path('app_forgot_password_request') }}">Mot de passe oublié</a>
+				</div>
+			</div>
+		</div>
+	{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Articles
+{% endblock %}
+
+{% block body %}
+
+	{% for article in articles %}
+
+		<div class="card">
+			<div class="card-header">
+				<h1>Articles</h1>
+			</div>
+			<div class="card-body">
+				<h3>{{ article.titre | upper }}</h3>
+			</div>
+			<div class="card-body">
+				<h3>{{ article.contenu }}</h3>
+			</div>
+
+			<div class="container">
+				<div>
+					<a href="{{ path('show_article',{'id':article.id}) }}" class="btn  btn-success mt-3" type="submit">Détail</a>
+					<a href="{{ path('edit_article',{'id':article.id}) }}" class="btn btn-success mt-3" type="submit">Modifier</a>
+					{% if app.user %}
+						{% if app.user.roles[0] is same as "ROLE_ADMIN" %}
+							<a href="{{ path('delete_article',{'id':article.id}) }}" class="btn btn-success mt-3" type="submit">Supprimer</a>
+						{% endif %}
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+
+{% endblock %}

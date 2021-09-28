@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+		<img class="logo" src="http://lesboisducerf.fr/images/logo-vecto.svg" alt="/">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="{{ path("accueil")}}">Accueil</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="{{ path("activite")}}">Activités</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Plan
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li>
+							<a class="dropdown-item" href="{{ path("plan")}}">Plan d'accès à la résidence</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="images/accesresidence.jpg">Plan détaillé</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="images/PlanDesBatiments.jpg">Plan des Logements</a>
+						</li>
+						<li>
+							{# <a class="dropdown-item" href="images/mapfinal.jpg">Résidence vue du ciel</a> #}
+						</li>
+						<li>
+							<a class="dropdown-item" href="images/mapfinal.jpg">Résidence vue du ciel (XXL)</a>
+						</li>
+
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="{{ path("galerie")}}">Galerie</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="{{ path("infocopro")}}">Info Copro</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Forum
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li>
+							<a class="dropdown-item" href="{{path("app_register")}}">Créer un compte</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="{{path("app_login")}}">Se connecter</a>
+						</li>
+						{% if app.user %}
+							<li>
+								<a class="dropdown-item" href="{{path("info")}}">Modifier mes infos</a>
+							</li>
+
+
+							<li>
+								<a class="dropdown-item" href="{{path("create_article")}}">Créer un article</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="{{path("list_article")}}">Liste des articles</a>
+							</li>
+						{% endif %}
+					</ul>
+				</li>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{{ path("contact")}}">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>

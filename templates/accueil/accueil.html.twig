@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil!
+{% endblock %}
+
+{% block stylesheets %}
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ asset('css/accueil_style.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+	<div class="main">
+		<section class="left">
+			<h1>Présentation de la résidence</h1>
+			<br>
+			<img src="/../images/immeuble_605.jpg" alt="immeuble">
+			<img class="inf" src="/../images/villa.webp" alt="maison">
+			<br>
+			<p>La résidence
+				<b>Les Bois du Cerf</b>
+				à Etiolles, en Essonne, est située dans un espace boisé de 42 ha à côté de la forêt de Sénart.
+				<br>
+				Elle est traversée par le "ru" des Hauldres qui prend sa source à Villaroche en Seine et Marne, et se jette dans la Seine, à hauteur de l'ile aux Paveurs.
+				<br>
+				<br>
+				La résidence comporte 243 lots, constitués de :
+				<br>
+				* logements comprenant :
+				<br>
+				59 villas
+				<br>
+				17 résidences de 3 ou 4 appartements
+				<br>
+				18 immeubles de 6 à 9 appartements
+				<br>
+				* un centre commercial comprenant:
+				<br>
+				une boulangerie
+				<br>
+				un cabinet médical
+				<br>
+				une agence immobilière
+				<br>
+				divers bureaux
+				<br>
+				* des locaux communs comprenant:
+				<br>
+				des ateliers et garages
+				<br>
+				des bureaux et une salle de réunion
+				<br>
+				2 salles destinées aux activités du
+				<b>
+					"Club des bois du Cerf"
+				</b>
+				<br>
+				un pigeonnier pouvant être utilisé par les résidents pour des événements
+				<br>
+				* une piscine
+				<br>
+				* 6 courts de tennis
+				<br>
+				* 3 aires de jeux
+				<br>
+				<br>
+			</p>
+		</section>
+		<section class="right">
+			<h1 class="right">Historique</h1>
+			<br>
+			<img src="/../images/etioles1a.jpg" alt="chateau">
+			<p>
+				<br>
+				<br>
+				<br>
+				En 1961, la SOGESTA société créée et gérée par le personnel des compagnies aériennes françaises, achetait le domaine du Vieux Parc.
+				<br>
+				<br>
+				Ce parc et la villa de Madame BROSSELIN qui y résidait, avaient été la propriété de Charles Guillaume LENORMAN jusqu'en 1800.
+				<br>
+				<br>
+				La famille LENORMAN avait acquis ce domaine et le château qui était situé à l'emplacement des immeubles 1 et 3, en 1697.
+				<br>
+				<br>
+				C'est pour alléger ses charges que Charles Guillaume LENORMAN fit abattre le château dit "la grande maison" en 1751, conservant toutefois les communs (site du centre commercial et place du 8 mai).
+				<br>
+				<br>
+				Au niveau haut de ces communs se trouvait le théâtre que Charles François Paul LENORMAN de TOURNEHEM avait fait installer pour Jeanne Antoinette POISSON, future Madame de POMPADOUR.
+				<br>
+				<br>
+				De 1761 à 1768, la partie basse de ces bâtiments a été occupée pour une faïencerie (porcelaine d'Etiolles).
+				<br>
+				<br>
+				La construction des
+				<b>Bois du Cerf</b>
+				commença en 1962, et après quelques péripéties, les travaux furent achevés en 1970.
+			</p>
+			<img class="droite_bas" src="/../images/Madame_de_pompadour.jpg" alt="">
+		</section>
+	</div>
+{% endblock %}

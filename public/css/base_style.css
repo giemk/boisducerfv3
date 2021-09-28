@@ -1,0 +1,75 @@
+/*reset-------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*typologie texte----------------*/
+}
+@font-face {
+  font-family: "titre";
+  src: url("/../polices/yerbaluisa_demo-font-FFP.ttf");
+}
+
+img.logo {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+}
+.btn {
+  background: #97c229;
+}
+p {
+  padding: 15px;
+}
+section.left img {
+  width: 50%;
+  margin: 25px;
+}
+section.right img {
+  width: 80%;
+  margin: 40px;
+  padding: 25px;
+  border-radius: 35px;
+}
+*/ .btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited {
+  background-color: #97c229 !important;
+}
+a {
+  color: #97c229 !important;
+}
+h1 {
+  text-align: center;
+  font-family: "titre";
+  font-size: xx-large;
+}
+.dea {
+  height: 50px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.image_plan {
+  height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.logo_facebook {
+  height: 50px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.sergic {
+  height: 50px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* partie responsive-----------------------*/
+
+@media screen and (max-width: 700px) {
+  nav .logo {
+    width: 100px;
+  }
+}

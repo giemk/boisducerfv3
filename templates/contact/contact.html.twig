@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact!
+{% endblock %}
+
+{% block body %}
+	<link rel="stylesheet" href="{{ asset('css/contact_style.css')}}">
+	<section class="container w-50">
+		<div class="card-header">
+			<h1>Qui contacter aux Bois du Cerf ?</h1>
+		</div>
+		<h4>La Loge</h4>
+		<strong>Tel : 01 60 75 10 84</strong>
+		<br>
+		<br>
+		<h4>Représentants du Conseil Syndical</h4>
+		<a href="">Liste des représentant(e)s</a>
+		<br>
+		<br>
+		<h4>Comité piscine</h4>
+		BAUCHER Stéphane
+		<br>
+		GUERICHER Antoine
+		<br>
+		<br>
+		<h4>Bureau tennis</h4>
+
+		GIROUX Michel
+		<br>
+		<strong>Tel : 01 60 75 36 71</strong>
+		<br>
+		<br>
+		<h4>Commerces</h4>
+		<div class="card-footer">
+			Boulangerie :
+			<strong>L'Epi Curieux</strong>
+			<a href="https://www.facebook.com/epicurieux91/about/?ref=page_internal">
+				<img class="logo_facebook" src="logos/facebook.png" alt=""></a>
+			<br>
+			<strong>Tel : 01 69 90 95 48</strong>
+			(Fermeture le lundi)
+		</div>
+		<br>
+		<div class="card-footer">
+			<h4>Agence</h4>
+			<a href="https://www.immodea.fr/fr/">Demeures d'Etiolles et d'Ailleurs</a>
+			<img class="dea" src="https://d36vnx92dgl2c5.cloudfront.net/cache/prod/Altera/839/media/82b7dfd1554b5a5d8eda03698d9e3f0c.webp" alt="">
+		</div>
+		<strong>Tel : 01 60 75 63 32</strong>
+		<br>
+		<br>
+		<h4>Divers</h4>
+		<a href="https://www.etiolles.fr/">Site du village d' Etiolles</a>
+		<h4>Webmaster</h4>
+		<a href="./user/profileEdit">Contacter</a>
+	</section>
+{% endblock %}

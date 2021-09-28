@@ -1,0 +1,77 @@
+nav {
+  border-radius: 10px;
+  border: solid 3px #97c229;
+  background-color: white;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+body {
+  min-height: 100vh;
+  /* animation-name: bgChange;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  min-height: 100vh; */
+  background: url("/../images/foret_3.jpg") no-repeat center/cover;
+}
+div {
+  display: flex;
+  justify-content: space-around;
+}
+
+section.right,
+section.left {
+  background-color: white;
+  border: solid 3px #97c229;
+  margin: 50px;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 30px;
+}
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.inf {
+  margin-top: 20px;
+}
+img.logo {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+}
+a {
+  color: #97c229 !important;
+}
+h1 {
+  text-align: center;
+  font-family: "titre";
+  font-size: xx-large;
+}
+img.droite_bas {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+}
+@font-face {
+  font-family: "titre";
+  src: url("/../polices/yerbaluisa_demo-font-FFP.ttf");
+}
+/* @keyframes bgChange {
+  0%,
+  49.99%,
+  100% {
+    background: url("/../images/foret_3.jpg") no-repeat center/cover;
+  }
+  50%,
+  99.99% {
+    background: url("/../uploads/IMG_20180207_082537.jpg") no-repeat
+      center/cover;
+  }
+} */

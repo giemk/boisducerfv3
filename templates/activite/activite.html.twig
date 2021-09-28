@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Activités
+{% endblock %}
+
+
+{% block body %}
+	<link rel="stylesheet" href="{{ asset('css/activite_style.css')}}">
+	<head>
+		{# <link rel="stylesheet" href="activite_style.css"> #}
+		<title>activites</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card">
+				<h1>Le Club :</h1>
+				<br>
+				<img src="images/pigeonnier.jpg" alt="pigeonnier">
+				<br>
+				<p>Depuis 40 ans
+					<b>Le Club
+					</b>des Bois du Cerf propose aux résidents et leurs amis différentes activités artistiques, ludiques, et sportives des 2 salles situées près du pigeonnier.</p>
+				<p>En savoir plus:</p>
+				<a href="club">Page du Club</a>
+			</div>
+			<br>
+			<div class="card">
+				<h1>La piscine :</h1>
+				<br>
+				<img src="images/piscine.jpeg" alt="">
+				<br>
+				<p>Réservée aux résidnts et leurs amis,
+					<b>la piscine</b>
+					est ouverte chaque été de mi-mai à mi-septembre en fonction de la météo.
+				</p>
+				<br>
+				<p>En savoir plus:</p>
+				<a href="piscine">Règlement de la piscine</a>
+			</div>
+			<br>
+			<div class="card">
+				<h1>Les tennis :</h1>
+				<br>
+				<img src="images/tennis.jpg" alt="">
+				<br>
+				<p>6 courts de
+					<b>tennis</b>
+					sont à la disposition des résidents inscrits à l'association.</p>
+				<p>En savoir plus:</p>
+				<a href="tennis">Règlement de l'association tennis</a>
+			</div>
+		</body>
+	</body>
+{% endblock %}

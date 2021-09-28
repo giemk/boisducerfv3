@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Infocopro
+{% endblock %}
+
+{% block body %}
+	<link rel="stylesheet" href="{{ asset('css/infocopro_style.css')}}">
+	<div class="container w-50">
+		<h1>Syndic</h1>
+		CABINET
+		<a href="https://www.sergic.com/agence-immobiliere/evry-91000/">SERGIC</a>
+		<img class="sergic" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_sergic_2013.jpg" alt="">
+		<br>
+		AGENCE : EVRY
+		<br>
+		6, allée des Champs Elysées - 91000 EVRY-COURCOURONNES
+		<br>
+		<strong>Tel : 01 60 78 90 45</strong>
+		<br>
+		<br>
+		Gestionnaire : MANIERE Elodie
+		<br>
+		<strong>Tel : 01 74 57 90 45</strong>
+		<br>
+		<a href="mailto:emaniere@sergic.com">emaniere@sergic.com</a>
+		<br>
+		<br>
+		Assistante : LANGEUIN Catherine
+		<br>
+		<strong>Tel : 01 74 57 90 06</strong>
+		<br>
+		<a href="mailto:clangeuin@sergic.com">clangeuin@sergic.com</a>
+		<br>
+		<br>
+
+		<h1>Représentants du Conseil Syndical</h1>
+		<a href="!">Liste des représentant(e)s</a>
+		<br>
+		<br>
+		<h1>Dossier de bienvenue et Réglement de copropriété</h1>
+		Pour tous les nouveaux arrivants des Bois du Cerf, il existe un cahier informatif qui explique brièvement l'historique de la résidence, les règles élémentaires à respecter et énumère les différents contacts auxquels le nouvel arrivant pourrait avoir besoin.
+		<a href="{{asset('docs/Bienvenue.pdf')}}">Dossier de bienvenue</a>
+		<br>
+		A lire également, le réglement de copropriété qui explique toutes les règles à respecter au sein de la résidence.
+		<br>
+		<a href="docs/Réglement_de_copropriété.pdf">Réglement de copropriété</a>
+		<br>
+		<br>
+		<h1>TelPass</h1>
+		Comment faire rentrer ses amis dans la résidence? Tout simplement en suivant les indications situées sur ce document.
+		<br>
+		<a href="docs/Telpass.pdf">TellPass</a>
+		<br>
+		<br>
+		<h1>
+			Sécurité</h1>
+		Le gardien est présent du lundi au vendredi de 8h à 12h et de 13h à 17h. Il (elle) est joignable au
+		<strong>01.60.75.10.84</strong>
+		<br>
+		<br>
+		<h1>Pigeonnier</h1>
+		Pour louer le pigeonnier, vous devez d'abord accepter le réglement d'utilisation du Pigeonnier puis compléter la
+		<a href="docs/Convention_Pigeonnier.pdf">Convention</a>
+		et l'envoyer à Mme Maïté DELPUECH.
+		<br>
+		<br>
+		<h1>Comptes rendus et notes du syndic</h1>
+		Pour lire les comptes-rendus du Conseil Syndical ainsi que les notes du syndic : il faut s'inscrire sur le Forum. Pour les novices, suivre les instructions du tutorial dans la partie "Aides et tutoriaux"
+																																																																					Pour toutes questions sur le fonctionnement du forum:
+		<a href="{{ path("app_register")}}">Forum</a>
+	</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}modif infos
+{% endblock %}
+
+{% block body %}
+	<div class="container pt-5 pb-5">
+		<div class="card">
+			<div class="card-header">
+				<h1>Modifier vos infos</h1>
+			</div>
+			<h6>Vous êtes connecté en tant que :
+				{% if is_granted('ROLE_ADMIN') %}
+					<h1>Administrateur</h1>
+				{% else %}
+					<h1>Utilisateur</h1>
+				{% endif %}
+				<div class="card-body">
+					{{ form_start(form) }}
+					<br>
+					{{ form_row(form.email) }}
+					{{ form_row(form.plainPassword) }}
+					<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+					<br>
+					<button type="submit" class="btn btn-success mt-3" href="{{ path('info')}}">Valider</button>
+					<br>
+					<br>
+					<a class="btn btn-success" href="{{ path('app_forgot_password_request') }}">Mot de passe oublié</a>
+					<br>
+					<button type="submit" class="btn btn-danger mt-3" href="{{ path('accueil')}}">Supprimer mon compte</button>
+					{{ form_end(form) }}
+					{# </form> #}
+				</div>
+			</div>
+		</div>
+		{% for message in app.flashes('success') %}
+			<div class="flash-info">
+				{{ message }}
+			</div>
+		{% endfor %}
+	{% endblock %}
