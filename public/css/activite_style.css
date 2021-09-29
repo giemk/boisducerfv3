@@ -16,7 +16,7 @@ img {
   width: 50%;
 }
 div.container {
-  background-color: white !important;
+  /* background-color: white !important; */
   min-height: 100vh;
   background: url("/../images/foret_3.jpg") no-repeat center/cover;
 }
