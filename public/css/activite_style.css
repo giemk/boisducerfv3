@@ -15,9 +15,9 @@ img {
 .card {
   width: 50%;
 }
-div.container {
-  background-color: white !important;
-}
+/* div.container {
+  /* background-color: white !important; */
+/* } */
 body {
   min-height: 100vh;
   background: url("/../images/foret_3.jpg") no-repeat center/cover;
