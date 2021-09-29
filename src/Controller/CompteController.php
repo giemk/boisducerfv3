@@ -43,22 +43,22 @@ class CompteController extends AbstractController
         }
         return $this->render('compte/modifInfo.html.twig', ['form' => $form->createView()]);
     }
-    // /**
-    //  * @Route("/register/{id}", name="info", methods={"DELETE"})
-    //  */
-    // public function deleteUser(Request $request, User $user, Session $session): Response
-    // {
-    //     $session = new Session();
-    //     $session->invalidate();
-    //     if ($this->isCsrfTokenValid('delete' . $user->getId(), $request->request->get('_token'))) {
-    //         $entityManager = $this->getDoctrine()->getManager();
-    //         $entityManager->remove($user);
-    //         $entityManager->flush();
+    /**
+     * @Route("compte{id}", name="info", methods={"DELETE"})
+     */
+    public function deleteUser(Request $request, User $user, Session $session): Response
+    {
+        $session = new Session();
+        $session->invalidate();
+        if ($this->isCsrfTokenValid('delete' . $user->getId(), $request->request->get('_token'))) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->remove($user);
+            $entityManager->flush();
 
-    //         $this->addFlash('sup', 'Votre compte a bien été supprimée');
-    //     }
+            $this->addFlash('sup', 'Votre compte a bien été supprimée');
+        }
 
 
-    //     return $this->redirectToRoute('accueil');
-    // }
+        return $this->redirectToRoute('accueil');
+    }
 }
