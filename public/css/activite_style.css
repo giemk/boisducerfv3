@@ -15,10 +15,12 @@ img {
 .card {
   width: 50%;
 }
-/* div.container {
-  /* background-color: white !important; */
-/* } */
-body {
+div.container {
+  background-color: white !important;
   min-height: 100vh;
   background: url("/../images/foret_3.jpg") no-repeat center/cover;
 }
+/* body {
+  min-height: 100vh;
+  background: url("/../images/foret_3.jpg") no-repeat center/cover;
+} */
