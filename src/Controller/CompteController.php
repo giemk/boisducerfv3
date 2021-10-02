@@ -36,28 +36,23 @@ class CompteController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);
             $entityManager->flush();
-            // $em->persist($user);
-            // $em->flush();
             $this->addFlash('success', 'Vos infos ont bien été modifiées');
             return $this->redirectToRoute('accueil');
         }
         return $this->render('compte/modifInfo.html.twig', ['form' => $form->createView()]);
     }
     /**
-     * @Route("compte{id}", name="info", methods={"DELETE"})
+     * @Route("compte/{id}", name="supprimer_user")
      */
-    public function deleteUser(Request $request, User $user, Session $session): Response
+    public function deleteUser(UserRepository $userRepository, int $id, EntityManagerInterface $em): Response
     {
-        $session = new Session();
-        $session->invalidate();
-        if ($this->isCsrfTokenValid('delete' . $user->getId(), $request->request->get('_token'))) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->remove($user);
-            $entityManager->flush();
 
-            $this->addFlash('sup', 'Votre compte a bien été supprimée');
-        }
+        $user = $userRepository->find($id);
+        $em->remove($user);
 
+        $em->flush();
+
+        $this->addFlash('success', 'Votre utilisateur a ete supprime');
 
         return $this->redirectToRoute('accueil');
     }

@@ -20,11 +20,11 @@
 
 			<div class="container">
 				<div>
-					<a href="{{ path('show_article',{'id':article.id}) }}" class="btn  btn-success mt-3" type="submit">Détail</a>
-					<a href="{{ path('edit_article',{'id':article.id}) }}" class="btn btn-success mt-3" type="submit">Modifier</a>
+					<a style="color:white !important" href="{{ path('show_article',{'id':article.id}) }}" class="btn  btn-success mt-3" type="submit">Détail</a>
+					<a style="color:white !important" href="{{ path('edit_article',{'id':article.id}) }}" class="btn btn-success mt-3" type="submit">Modifier</a>
 					{% if app.user %}
 						{% if app.user.roles[0] is same as "ROLE_ADMIN" %}
-							<a href="{{ path('delete_article',{'id':article.id}) }}" class="btn btn-success mt-3" type="submit">Supprimer</a>
+							<a style="color:white !important" href="{{ path('delete_article',{'id':article.id}) }}" class="btn btn-success mt-3" type="submit">Supprimer</a>
 						{% endif %}
 					{% endif %}
 				</div>
