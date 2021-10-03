@@ -1,3 +1,13 @@
+<style>
+	.surbrillance {
+		transition: 0.5s;
+	}
+	.surbrillance:hover {
+		background: #97c229 !important;
+		border-radius: 5px;
+		color: white !important;
+	}
+</style>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<div class="container-fluid">
 		<img class="logo" src="http://lesboisducerf.fr/images/logo-vecto.svg" alt="/">
@@ -7,14 +17,13 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="{{ path("accueil")}}">Accueil</a>
+					<a class="nav-link active surbrillance" aria-current="page" href="{{ path("accueil")}}">Accueil</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="{{ path("activite")}}">Activités</a>
+					<a class="nav-link active surbrillance" aria-current="page" href="{{ path("activite")}}">Activités</a>
 				</li>
-
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle surbrillance" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Plan
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -33,17 +42,16 @@
 						<li>
 							<a class="dropdown-item" href="images/mapfinal.jpg">Résidence vue du ciel (XXL)</a>
 						</li>
-
 					</ul>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="{{ path("galerie")}}">Galerie</a>
+					<a class="nav-link active surbrillance" aria-current="page" href="{{ path("galerie")}}">Galerie</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="{{ path("infocopro")}}">Info Copro</a>
+					<a class="nav-link active surbrillance" aria-current="page" href="{{ path("infocopro")}}">Info Copro</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle surbrillance" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Forum
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -57,8 +65,6 @@
 							<li>
 								<a class="dropdown-item" href="{{path("info")}}">Modifier mes infos</a>
 							</li>
-
-
 							<li>
 								<a class="dropdown-item" href="{{path("create_article")}}">Créer un article</a>
 							</li>
@@ -70,7 +76,7 @@
 				</li>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="{{ path("contact")}}">Contact</a>
+				<a class="nav-link active surbrillance" aria-current="page" href="{{ path("contact")}}">Contact</a>
 			</li>
 		</ul>
 	</div>
