@@ -10,6 +10,12 @@ nav {
 }
 body {
   min-height: 100vh;
+  /* animation-name: bgChange;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  min-height: 100vh; */
   background: url("/../images/foret_3.jpg") no-repeat center/cover;
 }
 div {

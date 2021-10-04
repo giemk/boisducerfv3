@@ -16,11 +16,13 @@ img {
   width: 50%;
 }
 div.container {
-  /* background-color: white !important; */
-  min-height: 100vh;
-  background: url("/../images/foret_4.jpg") no-repeat center/cover;
+  background-color: white !important;
 }
-/* body {
-  min-height: 100vh;
-  background: url("/../images/foret_3.jpg") no-repeat center/cover;
-} */
+.surbrillance {
+  transition: 0.5s;
+}
+.surbrillance:hover {
+  background: #97c229 !important;
+  border-radius: 5px;
+  color: white !important;
+}

@@ -39,3 +39,13 @@ footer p {
 .box-shadow {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
+<style>
+	.surbrillance {
+		transition: 0.5s;
+	}
+	.surbrillance:hover {
+		background: #97c229 !important;
+		border-radius: 5px;
+		color: white !important;
+	}
+</style>
