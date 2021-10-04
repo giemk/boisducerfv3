@@ -16,3 +16,11 @@ div.container {
   border-radius: 10px;
   padding: 30px;
 }
+.surbrillance {
+  transition: 0.5s;
+}
+.surbrillance:hover {
+  background: #97c229 !important;
+  border-radius: 5px;
+  color: white !important;
+}
